@@ -152,6 +152,7 @@
     .catalogue{margin-top:64px}
     .catalogue .section-title{margin-bottom:28px}
     .prods{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .prods.addons{grid-template-columns:1fr 1fr}
     .prod{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--shadow2);display:flex;flex-direction:column}
     .prod img{width:100%;aspect-ratio:1/1;object-fit:cover;border-bottom:1px solid var(--line);background:var(--ice)}
     .prod-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
@@ -205,7 +206,7 @@
       nav{height:66px}
       h1{font-size:2.7rem}
       section{padding:56px 0}
-      .cards,.steps,.comp-cards,.prods{grid-template-columns:1fr}
+      .cards,.steps,.comp-cards,.prods,.prods.addons{grid-template-columns:1fr}
       .prod.featured{flex-direction:column}
       .prod.featured img{width:100%;max-width:none;border-right:0;border-bottom:1px solid var(--line)}
       .prod.featured .prod-body{padding:22px}
@@ -296,7 +297,7 @@
           <article class="card">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
             <h3>Optional add-ons</h3>
-            <p>Optional add-on ebooks offered before and after checkout, each with its own price shown before confirming and charged only if accepted.</p>
+            <p>Optional add-on ebooks offered before and after checkout, each with its price in USD listed below and shown again before confirming; charged only if accepted.</p>
             <span class="tag">Optional</span>
           </article>
         </div>
@@ -344,7 +345,8 @@
                 <span class="prod-brand">Mentes Curiosas · Curious Minds</span>
                 <h3>The illustrated encyclopedia for curious kids, in ten languages</h3>
                 <p>An 11-book science, history and emotions encyclopedia for children aged 6 to 12: physics, chemistry, astronomy, biology, geography, maths, dinosaurs, animals, the human body, emotions and great people who changed the world. Each edition includes 8 printable bonuses: lifetime updates, a joke book, 20 bedtime stories, 27 card tricks, the little scientist's handbook, 100 home experiments, home engineering projects and a printable certificate.</p>
-                <p>Sold as a <strong>one-time purchase of US$ 27.99</strong> (list price US$ 79.99), delivered instantly as PDF by email. Optional add-on ebooks are offered at checkout with their own price. Each language has its own store, product page and checkout.</p>
+                <p>Price: <strong>USD 27.99, one-time payment</strong> (list price USD 79.99). Each language has its own store, product page and checkout.</p>
+                <p><strong>What you receive:</strong> an email right after payment with a secure link to the 11 illustrated books and the 8 printable bonuses in PDF, plus lifetime access in our online library. Read on any screen or print at home. Nothing is shipped.</p>
                 <div class="prod-langs"><span class="lbl">Product page:</span>
                   <a href="https://www.mentescuriosas.store" target="_blank" rel="noopener">Español</a>
                   <a href="https://www.shopcuriousminds.com" target="_blank" rel="noopener">English</a>
@@ -362,29 +364,42 @@
           </div>
 
           <div class="group-title">Optional add-on ebooks</div>
-          <div class="prods">
+          <p style="margin:-4px 0 16px;color:var(--muted);font-size:14px">Offered to customers right after they buy the encyclopedia. Prices below are our catalogue prices in USD; after checkout an add-on may be offered at a lower promotional price. The exact amount, in the currency of the checkout, is always shown before the customer accepts.</p>
+          <div class="prods addons">
             <article class="prod">
               <div class="prod-body">
                 <span class="prod-brand">Add-on · PDF</span>
-                <h3>Robot-building projects</h3>
-                <p>Step-by-step projects to build simple robots and machines at home with everyday materials.</p>
-                <div class="prod-price">Offered after checkout · <span>price shown before accepting</span></div>
+                <h3>Robots That Move</h3>
+                <p>Step-by-step projects to build simple robots and moving machines at home with everyday materials.</p>
+                <p><strong>What you receive:</strong> a PDF guide with the projects and video tutorials, delivered by email with lifetime access.</p>
+                <div class="prod-price">USD 49.99 · <span>one-time payment</span></div>
               </div>
             </article>
             <article class="prod">
               <div class="prod-body">
                 <span class="prod-brand">Add-on · PDF</span>
-                <h3>Printable activity packs</h3>
-                <p>Printable activity books and sheets that complement the encyclopedia, for kids to do on paper.</p>
-                <div class="prod-price">Offered after checkout · <span>price shown before accepting</span></div>
+                <h3>Mini Inventors</h3>
+                <p>Hands-on inventions and crafts for kids, explained in short video tutorials.</p>
+                <p><strong>What you receive:</strong> 105 video-tutorial projects plus printable bonuses, delivered by email with lifetime access.</p>
+                <div class="prod-price">USD 49.99 · <span>one-time payment</span></div>
               </div>
             </article>
             <article class="prod">
               <div class="prod-body">
                 <span class="prod-brand">Add-on · PDF</span>
-                <h3>30 science missions</h3>
-                <p>A 30-day programme of short family science missions, one a day, with simple materials.</p>
-                <div class="prod-price">Offered after checkout · <span>price shown before accepting</span></div>
+                <h3>Printable Activity Megapack</h3>
+                <p>Printable activity sheets that complement the encyclopedia, for kids to colour, solve and do on paper.</p>
+                <p><strong>What you receive:</strong> 52 printable activity sheets in PDF with a parent guide, delivered by email.</p>
+                <div class="prod-price">USD 27.75 · <span>one-time payment</span></div>
+              </div>
+            </article>
+            <article class="prod">
+              <div class="prod-body">
+                <span class="prod-brand">Add-on · PDF</span>
+                <h3>30 Science Missions</h3>
+                <p>A 30-day programme of short family missions, one a day: puzzles, secret codes and experiments with simple materials.</p>
+                <p><strong>What you receive:</strong> a PDF with the 30 missions, delivered by email.</p>
+                <div class="prod-price">USD 15.00 · <span>one-time payment</span></div>
               </div>
             </article>
           </div>
@@ -445,7 +460,7 @@
           <div class="notice" id="before-you-buy">
             <h3>Before you buy: what every customer sees at checkout</h3>
             <p>All our products are <strong>digital content with immediate delivery</strong>. Immediately after the payment is confirmed the customer receives an email with a secure download link; nothing is shipped physically. Discounts, crossed-out prices and limited-time offers are promotions: <strong>the price paid is always the one displayed at checkout when the order is confirmed</strong>, in the currency shown.</p>
-            <p>We offer a <strong>7-day money-back guarantee</strong> counted from the purchase date: the customer writes to us from the email used at checkout, quoting the order number, and the refund goes back to the original payment method within 5 to 10 business days. We also refund duplicate charges and billing errors without further conditions. Full details: <a href="refund.html">Refund Policy</a> · <a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a>.</p>
+            <p>We offer a <strong>7-day money-back guarantee</strong> counted from the purchase date: the customer writes to us from the email used at checkout, quoting the order number, and the refund goes back to the original payment method within 5 to 10 business days. We also refund duplicate charges and billing errors without further conditions. Full details: <a href="refund.html">Refund Policy</a> · <a href="cancellation.html">Cancellation Policy</a> · <a href="delivery.html">Delivery &amp; Return Policy</a> · <a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a> · <a href="legal.html">Legal &amp; Export Restrictions</a>.</p>
           </div>
         </div>
       </div>
@@ -491,7 +506,7 @@
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
             <h3>Transparent policies</h3>
             <p>Clear terms, privacy and refund policies are published on this site and linked from every checkout.</p>
-            <div class="policy-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+            <div class="policy-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a><a href="cancellation.html">Cancellation</a><a href="delivery.html">Delivery</a><a href="legal.html">Legal</a></div>
           </div>
           <div class="comp">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
@@ -516,14 +531,22 @@
           <div class="info-row"><strong>Hours &amp; response time</strong>Monday to Friday, 9:00 to 18:00 (Argentina time). We reply within 24 hours.</div>
           <div class="info-row"><strong>Customer support</strong><a href="support.html" style="color:var(--blue);text-decoration:underline">Customer Support page</a> · order issues, download links and refunds</div>
         </div>
-        <form class="form-box" onsubmit="return false;">
-          <input type="text" placeholder="Your name" />
-          <input type="email" placeholder="Your email" />
-          <input type="text" placeholder="Subject" />
-          <textarea placeholder="Tell us what you need"></textarea>
-          <button class="btn btn-primary" type="button">Send Message</button>
-          <p style="font-size:12px;color:var(--muted);margin:12px 0 0;">This form is for website presentation. Please contact us directly by email or WhatsApp for the fastest response.</p>
+        <form class="form-box" id="contact-form">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <input type="text" name="subject" placeholder="Subject (e.g. order number)" required />
+          <textarea name="message" placeholder="Tell us what you need" required></textarea>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p style="font-size:12px;color:var(--muted);margin:12px 0 0;">Sending opens your email app with the message addressed to info@cvrdigitalventures.com. You can also write to us directly by email or WhatsApp; we reply within 24 hours.</p>
         </form>
+        <script>
+          document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var f = e.target;
+            var body = f.message.value + '\n\n' + f.name.value + ' <' + f.email.value + '>';
+            location.href = 'mailto:info@cvrdigitalventures.com?subject=' + encodeURIComponent(f.subject.value) + '&body=' + encodeURIComponent(body);
+          });
+        </script>
       </div>
     </section>
   </main>
@@ -540,6 +563,9 @@
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms &amp; Conditions</a>
         <a href="refund.html">Refund Policy</a>
+        <a href="cancellation.html">Cancellation Policy</a>
+        <a href="delivery.html">Delivery &amp; Return Policy</a>
+        <a href="legal.html">Legal &amp; Export Restrictions</a>
         <a href="support.html">Customer Support</a>
       </div>
       <div>© 2026 CVR DIGITAL VENTURES LLC · Wyoming, USA<br />All rights reserved.</div>
